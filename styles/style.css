@@ -15,6 +15,9 @@
 */
 
 .page {
+    display: flex;
+    justify-content: center;
+    align-items: start;
     min-inline-size: 320px;
     min-block-size: 100dvb;
     font-family: var(--font-main), sans-serif;
@@ -22,4 +25,49 @@
         repeating-linear-gradient(to right, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
         linear-gradient(to bottom, #007f0c, #004306);
     background-size: cover;
+    color: var(--font-dark);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 100px;
+    width: clamp(700px, 700px, 100%);
+    height: clamp(368px, 368px, 327px);
+    font-family: 'PressStart2P', sans-serif;
+    background-color: var(--background-dark);
+    border: 2px solid var(--font-dark);
+}
+
+.header__title {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    font-size: 65px; /* добавить clamp для мобильного */
+}
+
+.header__title-subtext {
+    display: block;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.header__theme-menu {
+    margin: 25px 0 25px 18px;
+    font-size: 14px;
+}
+
+.theme-menu__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 11px;
+}
+
+.theme-menu__button {
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
 }
