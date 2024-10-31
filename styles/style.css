@@ -47,6 +47,7 @@
     row-gap: 20px;
     align-items: center;
     font-size: 65px; /* добавить clamp для мобильного */
+    font-weight: 400;
 }
 
 .header__title-subtext {
