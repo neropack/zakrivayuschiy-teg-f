@@ -219,22 +219,23 @@
     margin-top: 25px;
 }
 
-.post__like-heart {
+.card__icon-button {
     width: 36px;
     height: 38px;
+    padding: 0;
     background: none;
     border: 2px solid transparent;
 }
 
-.post__like-heart:focus {
+.card__icon-button:focus {
     outline: none;
 }
 
-.post__like-heart:focus-visible {
+.card__icon-button:focus-visible {
     border-color: var(--font-color);
 }
 
-.post__like-button {
+.card__like-button {
     width: 130px;
     height: 38px;
     background: none;
