@@ -66,24 +66,51 @@
     row-gap: 11px;
 }
 
+.button {
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.6;
+}
+
 .theme-menu__button {
     position: relative;
     text-transform: uppercase;
     background: transparent;
     border: none;
+    transition: opacity .3s ease;
+}
+
+.theme-menu__button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--font-color);
+    transition: width .3s ease;
+}
+
+.theme-menu__button:focus-visible {
+    outline: none;
+}
+
+.theme-menu__button:focus-visible::after {
+    width: 100%;
 }
 
 .theme-menu__button:disabled {
     opacity: 0.6;
+    pointer-events: none;
 }
 
 .theme-menu__button:disabled::before {
     content: '▶';
     position: absolute;
     top: 2px;
-    left: -13px;
     font-size: 14px;
     color: var(--font-color);
+    animation: arrow .5s ease-in-out infinite alternate;
 }
 
 .posts {
