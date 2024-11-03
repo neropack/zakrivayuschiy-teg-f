@@ -22,9 +22,7 @@
     min-inline-size: 320px;
     min-block-size: 100dvb;
     font-family: var(--font-main), sans-serif;
-    background-image: repeating-linear-gradient(to bottom, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
-        repeating-linear-gradient(to right, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
-        linear-gradient(to bottom, #007f0c, #004306);
+    background-image: var(--background-image);
     background-size: cover;
     color: var(--font-color);
 }
@@ -35,7 +33,7 @@
     justify-content: flex-end;
     align-items: center;
     margin-top: 100px;
-    width: clamp(700px, 700px, 100%);
+    width: clamp(700px, 700px, 100%); /* TODO: сделать НОРМАЛЬНО */
     height: clamp(368px, 368px, 327px);
     font-family: var(--font-accent), sans-serif;
     background-color: var(--background-color);
@@ -108,6 +106,34 @@
     font-weight: var(--font-weight-title);
     border: 2px solid var(--font-color);
     border-bottom: none;
+}
+
+.image__container {
+    position: relative;
+}
+
+.image__lable{
+    position: absolute;
+    top: 27px;
+    right: 25px;
+    font-family: var(--font-accent);
+    font-size: 14px;
+    color: var(--font-color);
+    opacity: 0.5;
+    text-shadow: 
+        -1px 0 var(--background-color), 
+        1px 0 var(--background-color),
+        0 1px var(--background-color), 
+        0 -1px var(--background-color);
+    mix-blend-mode: hard-light;
+}
+
+@supports ((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
+    .image__lable {
+        text-stroke: 1px var(--background-color);
+        -webkit-text-stroke: 1px var(--background-color);
+        text-shadow: none;
+    }
 }
 
 .post__image {
