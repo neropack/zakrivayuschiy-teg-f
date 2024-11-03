@@ -16,8 +16,9 @@
 
 .page {
     display: flex;
-    justify-content: center;
-    align-items: start;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
     min-inline-size: 320px;
     min-block-size: 100dvb;
     font-family: var(--font-main), sans-serif;
@@ -36,7 +37,7 @@
     margin-top: 100px;
     width: clamp(700px, 700px, 100%);
     height: clamp(368px, 368px, 327px);
-    font-family: 'PressStart2P', sans-serif;
+    font-family: var(--font-accent), sans-serif;
     background-color: var(--background-dark);
     border: 2px solid var(--font-dark);
 }
@@ -57,7 +58,7 @@
 }
 
 .header__theme-menu {
-    margin: 25px 0 25px 18px;
+    margin: 25px 0 25px 18px; /* задать размер блоку вместо отсутпов */
     font-size: 14px;
 }
 
@@ -71,4 +72,98 @@
     text-transform: uppercase;
     background: transparent;
     border: none;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    max-width: 700px;
+    margin-top: 100px;
+}
+
+.posts__post {
+    width: 100%;
+    background-color: var(--background-dark);
+}
+
+.post__title {
+    padding: 3px 24px 6px 10px;
+    font-size: 18px;
+    line-height: 21.78px;
+    font-weight: var(--font-weight-title);
+    border: 2px solid var(--font-dark);
+    border-bottom: none;
+}
+
+.post__image {
+    display: block;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: 96%;
+    border: 2px solid var(--font-dark);
+    
+}
+
+.post__container {
+    padding: 25px;
+    border: 2px solid var(--font-dark);
+    border-top: none;
+}
+
+.post__text-container {
+    font-size: 18px;
+    font-weight: var(--font-weight-text);
+    line-height: 21px;
+}
+
+.post__subtext {
+    display: block;
+    margin-top: 27px;
+}
+
+.post__like-form {
+    display: flex;
+    justify-content: end;
+    margin-top: 25px;
+}
+
+.post__like-heart {
+    background: none;
+    border: none;
+}
+
+.heart {
+    margin-top: 8px;
+    margin-right: 6px;
+}
+
+.post__like-button {
+    width: 130px;
+    height: 38px;
+    padding-top: 6px;
+    background: none;
+    border: 2px solid var(--font-dark);
+}
+
+.button__text {
+    font-family: var(--font-accent);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 12.6px;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.footer__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 21px 15px 19px;
+    gap: 8px;
+    background-color: var(--background-dark);
+    border: 2px solid var(--font-dark);
 }
