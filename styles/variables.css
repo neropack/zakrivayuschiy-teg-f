@@ -11,4 +11,7 @@
     --background-image: repeating-linear-gradient(to bottom, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
         repeating-linear-gradient(to right, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
         linear-gradient(to bottom, #007f0c, #004306);
+
+    --contour: #00CC14;
+    --sparks: #FF0000;
 }
