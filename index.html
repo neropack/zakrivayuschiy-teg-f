@@ -26,13 +26,13 @@
                 <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
                 <ul class="theme-menu__list">
                     <li class="theme-menu__item">
-                        <button type="button" data-theme="dark" class="theme-menu__button button">Темно</button>
+                        <button type="button" data-theme="dark" class="theme-menu__button">Темно</button>
                     </li>
                     <li class="theme-menu__item">
-                        <button type="button" data-theme="auto" disabled class="theme-menu__button button">Авто</button>
+                        <button type="button" data-theme="auto" disabled class="theme-menu__button">Авто</button>
                     </li>
                     <li class="theme-menu__item">
-                        <button type="button" data-theme="light" class="theme-menu__button button">Светло</button>
+                        <button type="button" data-theme="light" class="theme-menu__button">Светло</button>
                     </li>
                 </ul>
             </nav>
@@ -52,7 +52,7 @@
                         <span class="post__subtext">Место для ваших воспоминаний о начале обучения.</span>
                     </div>
                     <form class="post__like-form">
-                        <button class="post__like-heart button">
+                        <button class="post__like-heart">
                             <img src="./svg/heart.svg" alt="иконка сердца" class="heart">
                         </button>
 
@@ -68,7 +68,9 @@
 
         <footer class="footer">
             <button class="footer__button button">
-                <img src="./svg/floppy.svg" alt="иконка дискеты" class="floppy">
+                <svg class="button__icon">
+                    <use href="./svg/floppy.svg#floppy">
+                </svg>
                 <span class="button__text">
                     Сохранить на память
                 </span>
