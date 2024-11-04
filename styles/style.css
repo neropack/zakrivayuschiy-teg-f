@@ -240,7 +240,8 @@
     border: 2px solid var(--font-color);
 }
 
-.button__text, .dialog__text {
+.button__text,
+.dialog__text {
     position: relative;
     z-index: 1;
     font-family: var(--font-accent);
@@ -317,16 +318,44 @@
 
 @media (width < 376px) {
     .dialog {
-      padding: 28px 34px 28px 40px;
-      max-width: 340px;
+        padding: 28px 34px 28px 40px;
+        max-width: 340px;
     }
-  
+
     .footer__button {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
+
     .button__icon {
-      width: 28px;
-      height: 28px;
+        width: 28px;
+        height: 28px;
     }
-  }
+}
+
+.filter-grayscale {
+    filter: grayscale(50%);
+}
+
+.filter-multiple {
+    filter: contrast(30%) hue-rotate(95deg) saturate(120%);
+}
+
+.filter-hue-rotate {
+    filter: hue-rotate(150deg);
+}
+
+.filter-saturate {
+    filter: saturate(250%);
+}
+
+.filter-invert {
+    filter: invert(100%);
+}
+
+.filter-sepia {
+    filter: sepia(60%);
+}
+
+.filter-blur {
+    filter: blur(5px);
+}
