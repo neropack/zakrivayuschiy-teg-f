@@ -225,6 +225,7 @@
     padding: 0;
     background: none;
     border: 2px solid transparent;
+    cursor: pointer;
 }
 
 .card__icon-button:focus {
