@@ -22,6 +22,7 @@
     min-inline-size: 320px;
     min-block-size: 100dvb;
     font-family: var(--font-main), sans-serif;
+    font-variation-settings: 'wght' var(--font-weight-text);
     background-image: var(--background-image);
     background-size: cover;
     color: var(--font-color);
@@ -267,13 +268,10 @@
 .button__icon {
     position: relative;
     z-index: 1;
-    color: var(--button-text-color);
-    mix-blend-mode: difference;
-}
-
-.button__icon {
     width: 21px;
     height: 21px;
+    color: var(--button-text-color);
+    mix-blend-mode: difference;
 }
 
 .dialog {
