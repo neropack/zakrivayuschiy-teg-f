@@ -151,7 +151,7 @@
 }
 
 .post__title {
-    padding: 4px 10px;
+    padding: 4px 10px 5px;
     font-size: 18px;
     line-height: 21.78px;
     font-weight: var(--font-weight-title);
@@ -186,9 +186,9 @@
 .post__image {
     display: block;
     width: 100%;
-    height: clamp(23.438rem, 16.373rem + 30.141vw, 43.5rem);
+    height: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
     object-fit: cover;
-    object-position: 96%;
+    object-position: center;
     border: 2px solid var(--font-color);
 }
 
@@ -212,7 +212,7 @@
 .post__like-form {
     display: flex;
     justify-content: end;
-    gap: 5px;
+    gap: 4px;
     margin-top: 25px;
 }
 
@@ -314,3 +314,19 @@
 .dialog__button {
     width: 100%;
 }
+
+@media (width < 376px) {
+    .dialog {
+      padding: 28px 34px 28px 40px;
+      max-width: 340px;
+    }
+  
+    .footer__button {
+      flex-direction: column;
+    }
+  
+    .button__icon {
+      width: 28px;
+      height: 28px;
+    }
+  }
