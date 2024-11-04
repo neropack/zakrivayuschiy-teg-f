@@ -12,8 +12,8 @@
     --button-text-color: #00cc14;
 
     --background-color: #000;
-    --background-image: repeating-linear-gradient(to bottom, #000 0 2px, #00000000 2px 4px),
-        repeating-linear-gradient(to right, #000 0 2px, #00000000 2px 4px), linear-gradient(to bottom, #007f0c, #004306);
+    --background-image: repeating-linear-gradient(to right, #000 0 2px, #00000000 2px 4px),
+        repeating-linear-gradient(to bottom, #000 0 2px, #00000000 2px 4px), linear-gradient(to bottom, #007f0c, #004306);
 
     --contour: #00cc14;
 }
@@ -25,8 +25,8 @@
     --button-text-color: #fff;
 
     --background-color: #fff;
-    --background-image: repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px),
-        repeating-linear-gradient(to right, #d3d3d3 0 2px, #d3d3d300 2px 4px),
+    --background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, #d3d3d300 2px 4px),
+        repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px),
         linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 
     --contour: #000;
@@ -40,8 +40,8 @@
         --button-text-color: #fff;
 
         --background-color: #fff;
-        --background-image: repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px),
-            repeating-linear-gradient(to right, #d3d3d3 0 2px, #d3d3d300 2px 4px),
+        --background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, #d3d3d300 2px 4px),
+            repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px),
             linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 
         --contour: #000;
