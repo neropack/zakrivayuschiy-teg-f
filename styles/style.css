@@ -148,6 +148,7 @@
 .posts__post {
     width: 100%;
     background-color: var(--background-color);
+    border: 2px solid var(--font-color);
 }
 
 .post__title {
@@ -155,8 +156,7 @@
     font-size: 18px;
     line-height: 21.78px;
     font-weight: var(--font-weight-title);
-    border: 2px solid var(--font-color);
-    border-bottom: none;
+    border-bottom: 2px solid var(--font-color);
 }
 
 .image__container {
@@ -189,13 +189,11 @@
     height: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
     object-fit: cover;
     object-position: center;
-    border: 2px solid var(--font-color);
 }
 
 .post__container {
     padding: 25px;
-    border: 2px solid var(--font-color);
-    border-top: none;
+    border-top: 2px solid var(--font-color);
 }
 
 .post__text-container {
@@ -337,7 +335,7 @@
 }
 
 .filter-multiple {
-    filter: contrast(30%) hue-rotate(95deg) saturate(120%);
+    filter: hue-rotate(95deg) saturate(120%);
 }
 
 .filter-hue-rotate {
