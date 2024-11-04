@@ -4,4 +4,14 @@
     --font-accent: 'PressStart2P';
     --font-weight-title: 785;
     --font-weight-text: 465;
+    --font-color: #00CC14;
+    --button-text-color: #00CC14;
+
+    --background-color: #000;
+    --background-image: repeating-linear-gradient(to bottom, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+        repeating-linear-gradient(to right, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+        linear-gradient(to bottom, #007f0c, #004306);
+
+    --contour: var(--font-color);
+    --sparks: #FF0000;
 }

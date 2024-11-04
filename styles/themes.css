@@ -4,3 +4,46 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+    --font-weight-title: 785;
+    --font-weight-text: 465;
+    --font-color: #00cc14;
+    --button-text-color: #00cc14;
+
+    --background-color: #000;
+    --background-image: repeating-linear-gradient(to bottom, #000 0 2px, #00000000 2px 4px),
+        repeating-linear-gradient(to right, #000 0 2px, #00000000 2px 4px), linear-gradient(to bottom, #007f0c, #004306);
+
+    --contour: #00cc14;
+}
+
+:root.theme-light {
+    --font-weight-title: 700;
+    --font-weight-text: 400;
+    --font-color: #000;
+    --button-text-color: #fff;
+
+    --background-color: #fff;
+    --background-image: repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px),
+        repeating-linear-gradient(to right, #d3d3d3 0 2px, #d3d3d300 2px 4px),
+        linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+
+    --contour: #000;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --font-weight-title: 700;
+        --font-weight-text: 400;
+        --font-color: #000;
+        --button-text-color: #fff;
+
+        --background-color: #fff;
+        --background-image: repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px),
+            repeating-linear-gradient(to right, #d3d3d3 0 2px, #d3d3d300 2px 4px),
+            linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+
+        --contour: #000;
+    }
+}
