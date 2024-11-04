@@ -74,11 +74,11 @@
 .button:focus {
     outline: none;
     box-shadow: 2px 2px 0 var(--font-color);
-    transition: box-shadow .3s ease;
+    transition: box-shadow 0.3s ease;
 }
 
 .button::after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: 0;
     top: 0;
@@ -87,7 +87,7 @@
     width: 0;
     height: 100%;
     background-color: var(--font-color);
-    transition: width .5s ease-in-out;
+    transition: width 0.5s ease-in-out;
 }
 
 .button:hover::after {
@@ -99,7 +99,7 @@
     text-transform: uppercase;
     background: transparent;
     border: none;
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:hover {
@@ -107,12 +107,12 @@
 }
 
 .theme-menu__button::after {
-    content: '';
+    content: "";
     display: block;
     width: 0;
     height: 2px;
     background-color: var(--font-color);
-    transition: width .3s ease;
+    transition: width 0.3s ease;
 }
 
 .theme-menu__button:focus-visible {
@@ -129,12 +129,12 @@
 }
 
 .theme-menu__button:disabled::before {
-    content: '▶';
+    content: "▶";
     position: absolute;
     top: 2px;
     font-size: 14px;
     color: var(--font-color);
-    animation: arrow .5s ease-in-out infinite alternate;
+    animation: arrow 0.5s ease-in-out infinite alternate;
 }
 
 .posts {
@@ -163,7 +163,7 @@
     position: relative;
 }
 
-.image__lable{
+.image__lable {
     position: absolute;
     top: 27px;
     right: 25px;
@@ -171,10 +171,7 @@
     font-size: 14px;
     color: var(--font-color);
     opacity: 0.5;
-    text-shadow: 
-        -1px 0 var(--background-color), 
-        1px 0 var(--background-color),
-        0 1px var(--background-color), 
+    text-shadow: -1px 0 var(--background-color), 1px 0 var(--background-color), 0 1px var(--background-color),
         0 -1px var(--background-color);
     mix-blend-mode: hard-light;
 }
@@ -243,7 +240,7 @@
     border: 2px solid var(--font-color);
 }
 
-.button__text {
+.button__text, .dialog__text {
     position: relative;
     z-index: 1;
     font-family: var(--font-accent);
@@ -278,4 +275,42 @@
 .button__icon {
     width: 21px;
     height: 21px;
-  }
+}
+
+.dialog {
+    border: 2px solid var(--font-color);
+    padding: 25px 30px;
+    color: var(--font-color);
+    font-family: var(--font-accent);
+    line-height: 1.5;
+    text-transform: uppercase;
+    background: var(--background-color);
+    width: 355px;
+}
+
+.dialog[open] {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.dialog::backdrop {
+    opacity: 0.75;
+    background: #000;
+}
+
+.dialog__content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.dialog__icon {
+    flex-shrink: 0;
+    width: 39px;
+    height: 39px;
+}
+
+.dialog__button {
+    width: 100%;
+}
