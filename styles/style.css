@@ -142,7 +142,7 @@
     top: 0;
     font-size: 14px;
     color: var(--font-color);
-    animation: arrow 0.5s ease-in-out infinite alternate;
+    animation: slideToLeft 0.5s ease-in-out infinite alternate;
 }
 
 .posts {
