@@ -72,14 +72,14 @@
 }
 
 .like-icon.is-liked .heart {
-    animation: heart 0.3s ease-in 0.1s 1 alternate;
+    animation: scaleUp 0.3s ease-in 0.1s 1 alternate;
 }
 
 .like-icon.is-liked .sparks {
-    animation: sparks 0.3s ease-in 0.3s 1 alternate;
+    animation: appearing 0.3s ease-in 0.3s 1 alternate;
 }
 
-@keyframes arrow {
+@keyframes slideToLeft {
     from {
         left: -13px;
     }
@@ -89,17 +89,21 @@
     }
 }
 
-@keyframes heart {
-    from {
+@keyframes scaleUp {
+    0% {
         transform: scale(1);
     }
 
-    to {
+    50% {
         transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
 
-@keyframes sparks {
+@keyframes appearing {
     from {
         opacity: 0;
     }
