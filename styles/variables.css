@@ -12,6 +12,6 @@
         repeating-linear-gradient(to right, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
         linear-gradient(to bottom, #007f0c, #004306);
 
-    --contour: var(--font-color);
+    --contour: var(--font-color, #00CC14);
     --sparks: #FF0000;
 }
